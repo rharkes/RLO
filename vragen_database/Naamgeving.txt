@@ -1,0 +1,13 @@
+De naamgeving van vragen is als volgt:
+<klasjaar><klasniveau>_<onderwerp>_<nummer>.toml
+
+Dat dit zo summier is is bewust, de overige informatie is in de .toml file opgenomen.
+toml files kunnen worden geopend met kladblok of een andere tekst editor.
+Klasjaar:
+{1,2,3,4,5,6}
+Klasniveau:
+{H,HV,T,V}
+Onderwerp:
+{Electriciteit, Krachten, }
+Nummer:
+00000 t/m 99999
