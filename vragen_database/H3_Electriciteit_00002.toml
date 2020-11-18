@@ -1,0 +1,31 @@
+# Informatie over opgaven wordt opgeslagen in TOML formaat
+# Met de hashtag kan je deze bestanden van commentaar voorzien
+# Opgaven bevatten de volgende structuur:
+# naam (string, verplicht)
+# text (string, optioneel)
+# afbeelding (string, optioneel)
+# De vraag of vragen (table, tenminste 1)
+
+# Een vraag bevat de volgende structuur:
+# text (string ; verplicht)
+# afbeelding (string, optioneel)
+# punten (getal ; verplicht)
+# niveau (getal ; verplicht)
+#     0 = R
+#     1 = T1
+#     2 = T2
+#     3 = I
+
+naam = "Letterlijk uit je boek"
+text = ""
+
+[vraag1]
+text = "Neem de onderstaande tabel over op je antwoordblad en vul de ontbrekende gegevens (grootheden en/of eenheden) in."
+punten = 3
+niveau = 0
+tabel.boven = false  # Of de tabel boven of onder de vraag moet
+tabel.kop = [ "grootheid", "symbool", "eenheid", "symbool" ]
+tabel.inhoud = [
+    ["spanning" , "U" , "", ""],
+    ["" , "I" , "", ""],
+    ["" , "R" , "ohm", ""]]
