@@ -16,20 +16,25 @@
 #     2 = T2
 #     3 = I
 
-naam = "Een schakeling maken"
-text = "In een schakeling zijn 3 lampen opgenomen die zijn aangesloten op een batterij. Er is 1 schakelaar waarmee lamp A en lamp B tegelijk mee worden in- en uitgeschakeld.  Er is nog een schakelaar waarmee de lamp C wordt bediend."
+naam = "De ballon"
+text = "Marion heeft met een ballon over haar wollen trui gewreven. Daardoor is de ballon negatief geladen."
 
 [vraag1]
-text = "Teken een schakelschema dat bovenstaande eigenschappen heeft en label lampjes A, B en C (nb: er zijn meerdere mogelijkheden, 1 tekening is genoeg)."
-punten = 3
-niveau = 2
+text = "Hoe heten de deeltjes die daarbij zijn overgesprongen?"
+punten = 1
+niveau = 0
 
 [vraag2]
-text = "Teken het schakelschema nogmaals, en teken ook in de stroomkring een stroommeter waarmee de totale stroom door lamp A en B gemeten kan worden."
-punten = 3
-niveau = 2
+text = "Zijn die deeltjes overgesprongen van de ballon naar de trui of van de trui naar de ballon?"
+punten = 1
+niveau = 1
 
 [vraag3]
-text = "Teken de stroomkring nog een keer; doe dat zodanig dat je aan bovenstaande eisen voldoen, maar bovendien een stroommeter kan plaatsen waarmee je de stroom door lamp B en C kunt meten."
-punten = 2
-niveau = 3
+text = "Wat voor lading heeft haar trui gekregen?"
+punten = 1
+niveau = 1
+
+[vraag4]
+text = "Leg uit waardoor de ballon aan haar trui blijft ‘kleven’"
+punten = 1
+niveau = 1
