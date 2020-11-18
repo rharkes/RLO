@@ -17,6 +17,7 @@ opgavepaden = [
     Path(base_path, 'H3_Electriciteit_00002.toml')
 ]
 
+
 def print_tabel(tabel):
     """
     Tsja, hier heb je een functie nodig die netjes een tabel print.
@@ -29,7 +30,8 @@ def print_tabel(tabel):
     for regel in tabel['inhoud']:
         print(regel)
 
-def print_vraag(vraag, iter=False):
+
+def print_vraag(vraag, iter=-1):
     """
     Functie om een vraag te printen
     :param vraag:
@@ -40,7 +42,7 @@ def print_vraag(vraag, iter=False):
         if vraag['tabel']['boven']:
             print_tabel(vraag['tabel'])
     vraagstring = str(vraag['punten']) + "p "
-    if iter:
+    if iter > -1:
         vraagstring += abc[iter] + ") "
     vraagstring += vraag['text']
     print(vraagstring)
