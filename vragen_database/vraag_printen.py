@@ -9,10 +9,10 @@ In alle gevallen moet de informatie uit de .toml files worden gebruikt.
 from pathlib import Path
 import toml
 from string import ascii_lowercase as abc
-
+base_path = Path("C:\\Users\\Rolf\\githubreps\\rlo\\vragen_database")
 opgavepaden = [
-    Path(Path.cwd(), 'H3_Electriciteit_00000.toml'),
-    Path(Path.cwd(), 'H3_Electriciteit_00001.toml'),
+    Path(base_path, 'H3_Electriciteit_00000.toml'),
+    Path(base_path, 'H3_Electriciteit_00001.toml'),
 ]
 for i_opg, opgavepad in enumerate(opgavepaden):
     opg = toml.load(opgavepad)
@@ -26,7 +26,7 @@ for i_opg, opgavepad in enumerate(opgavepaden):
     vragen.sort()
     if len(vragen) > 1:
         for i, vraag in enumerate(vragen):
-            print(abc[i] + ") " + opg[vraag]['text'])
+            print(str(opg[vraag]['punten']) + "p " + abc[i] + ") " + opg[vraag]['text'])
     else:
         print(opg[vragen[0]]['text'])
     print("")
