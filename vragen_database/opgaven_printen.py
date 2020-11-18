@@ -31,19 +31,19 @@ def print_tabel(tabel):
         print(regel)
 
 
-def print_vraag(vraag, iter=-1):
+def print_vraag(vraag, iteratie=-1):
     """
     Functie om een vraag te printen
     :param vraag:
-    :param iter:
+    :param iteratie:
     :return:
     """
     if 'tabel' in vraag.keys():
         if vraag['tabel']['boven']:
             print_tabel(vraag['tabel'])
     vraagstring = str(vraag['punten']) + "p "
-    if iter > -1:
-        vraagstring += abc[iter] + ") "
+    if iteratie > -1:
+        vraagstring += abc[iteratie] + ") "
     vraagstring += vraag['text']
     print(vraagstring)
     if 'tabel' in vraag.keys():
