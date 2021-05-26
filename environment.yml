@@ -1,0 +1,7 @@
+name: rlo_py
+channels:
+  - conda-forge
+dependencies:
+  - conda-forge::python=3.9
+  - conda-forge::numpy
+  - conda-forge::pillow
